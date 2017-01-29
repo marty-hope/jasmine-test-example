@@ -22,4 +22,21 @@ describe("ArrayJs", function () {
         });
 
     });
+    describe("when adding an item to ArrayJs", function () {
+        it("it should  contain 1 item", function () {
+            sut.add("test");
+            expect(sut.ar.length).toBe(1);
+        });
+
+    });
+
+     describe("when executing getFirstItem in ArrayJs", function () {
+        it("the first item in the array should be returned", function () {
+            sut.add("test");
+            sut.add("this");
+            sut.add("stuff");
+            expect(sut.getFirstItem()).toBe("test");
+        });
+
+    });
 });
