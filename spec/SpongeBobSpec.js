@@ -2,7 +2,7 @@ describe("SpongeBob", function(){
     var sBob;
     if(typeof require !== 'undefined')
     {
-        sBob = require('../src/SpongeBob');
+        sBob = require('../src/api/SpongeBob');
     }
     var sut;
 

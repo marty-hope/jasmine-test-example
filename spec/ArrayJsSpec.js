@@ -1,7 +1,7 @@
 describe("ArrayJs", function () {
     var ArrJs;
     if (typeof require !== 'undefined') {
-        ArrJs = require('../src/ArrayJs');
+        ArrJs = require('../src/api/ArrayJs');
     }
     var sut;
 
