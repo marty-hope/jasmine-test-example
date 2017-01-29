@@ -1,7 +1,7 @@
 describe("Calculator", function () {
     var Calc;
     if (typeof require !== 'undefined') {
-        var Calc = require('../src/Calculator');
+        Calc = require('../src/Calculator');
     }
     var sut;
 
