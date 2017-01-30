@@ -15,7 +15,7 @@ ArrayJs.prototype.addToArray = function(items)
 {
     if(items)
     {
-        items.forEach((el) => this.ar.unshift(el));
+        items.forEach(el => this.ar.unshift(el));
     }
 }
 
