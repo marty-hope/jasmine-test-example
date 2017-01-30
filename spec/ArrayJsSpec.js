@@ -39,4 +39,28 @@ describe("ArrayJs", function () {
         });
 
     });
+
+    describe("when executing addToArray in ArrayJs", function () {
+        it("the items are added to the array", function () {
+            sut.addToArray(["test", "this", "stuff"]);
+            expect(sut.ar.length).toBe(3);
+        });
+
+    });
+     describe("when executing getLastItem in ArrayJs", function () {
+        it("the last item in the array should be returned", function () {
+            sut.add("test");
+            sut.add("this");
+            sut.add("stuff");
+            expect(sut.GetLastItem()).toBe("stuff");
+        });
+
+    });
+    describe("when executing addToArray in ArrayJs with no parameters", function () {
+        it("the internal arr should be empty", function () {
+            sut.addToArray();
+            expect(sut.ar.length).toBe(0);
+        });
+
+    });
 });
