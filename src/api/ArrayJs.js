@@ -19,8 +19,12 @@ ArrayJs.prototype.addToArray = function(items)
     }
 }
 
-ArrayJs.prototype.GetLastItem = function() {
+ArrayJs.prototype.getLastItem = function() {
     return this.ar.pop();
+}
+
+ArrayJs.prototype.length = function(){
+    return this.ar.length;
 }
 
 //module is part of Node
